@@ -1,7 +1,7 @@
 @charset "UTF-8";
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 html,body{
@@ -9,14 +9,7 @@ html,body{
     width: 100vw;
     background-color: rgb(37, 37, 37);
 }
-body{
-    background: url("images/fundo-madeira.jpg") top center no-repeat fixed;
-    background-size: cover;
-}
-main{
-    height: 100vh;
-    position: relative;
-}
+body{background: url('images/fundo-madeira.jpg') top center no-repeat;background-size: cover;}
 #telefone{
     position: absolute;
     top: 50%;
@@ -24,7 +17,7 @@ main{
     transform: translate(-50%, -50%);
     width: 311px;
     height: 627px;
-    background: url("images/frame-iphone.png") no-repeat;
+    background: url('images/frame-iphone.png') no-repeat;
 }
 #tela{
     position: relative;
@@ -46,11 +39,18 @@ main{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
     border: 2px solid rgba(255, 255, 255, 0);
     box-sizing: border-box;
+    transition: all 0.4s;
 }
 #links img:hover{
-    border: 2px solid rgba(255, 255, 255, .7);
+    border-color: rgba(255, 255, 255, .7);
     box-shadow: 9px 2px 10px rgba(0, 0, 0, .7);
     scale: 1.1;
     translate: -7px 0px;
-    transition: all 0.4s;
+}
+footer{
+    position: absolute;
+    top: 50vh;
+    left: 100px;
+    color: rgb(240, 240, 240);
+    text-shadow: -2px 1px 2px rgba(0, 0, 0, .5);
 }
